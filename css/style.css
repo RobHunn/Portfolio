@@ -1,0 +1,184 @@
+/* All styles*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/************************************************************************/
+                    /*
+                    * === Nav styles start ===
+                    */
+/************************************************************************/
+/* 
+* --Nav-Container--
+*/
+.navbar{
+    padding: 22px 0px;
+    border-bottom: none !important;
+}
+.navbar-inverse{
+    background-color: transparent !important;
+}
+
+/* 
+* --Nav Menu items--
+*/
+.navbar ul li a{
+    color:white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: all .5s ease-in;
+}
+.navbar ul li a:hover{
+    color: red !important;
+}
+.navbar-inverse .navbar-collapse{
+    border-color: transparent !important;
+}
+.nav-location{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+/* 
+* --Hamburger Menu--
+*/
+.navbar-toggle{
+    border:1px solid white !important;
+    transition: all .5s ease-in;
+}
+.navbar-toggle:hover{
+    background-color: red !important;
+}
+/*
+* === Nav styles end ===
+*/
+
+/************************************************************************/
+                    /*
+                    * === Slider section start ===
+                    */
+/************************************************************************/
+
+/* 
+* --Container / background img--
+*/
+.slider{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/main/main-slider.jpg);
+    background-size: cover;
+    background-position: bottom;
+  
+}
+/* 
+* --Adjust here for opacity div--
+*/
+.slider-opacity{
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.65);
+    position: relative;
+    color: white;
+}
+/* 
+* --Positioning of main box--
+*/
+.slider-content{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+}
+/* 
+* --Top 3 icons--
+*/
+.icons .fa{
+    font-size: 60px;
+    margin-right: 7px;
+}
+/* 
+* --Slider buttons--
+*/
+.btn1{
+    padding: 10px 25px;
+    margin-right: -6px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all .5s ease-in;
+}
+.btn1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+.btn2{
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all .5s ease-in;
+}
+.btn2:hover{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+/* 
+* --Slider btn ends--
+*/
+
+/* 
+* --Social media icons--
+*/
+.social-media a.fa{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    color: white;
+    text-decoration: none;
+    margin-right: 2px;
+    transition: all .5s ease-in;
+}
+.social-media a.fa:hover{
+    text-decoration: none;
+    border: 1px solid red;
+    color:white;
+    background-color: red;
+}
+
+/*
+* === Slider section end ===
+*/
+
+/************************************************************************/
+                    /*
+                    * ===  section start ===
+                    */
+/************************************************************************/
+
+
+
+
+/*
+* ===  section end ===
+*/
+
+/************************************************************************/                  
+                    /*
+                    * ===  section start ===
+                    */
+/************************************************************************/
