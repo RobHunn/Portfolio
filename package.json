@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@work-github.com:RobHunn/Portfolio.git"
+  },
+  "keywords": [
+    "Web",
+    "developer",
+    "software",
+    "engineer",
+    "javascript",
+    "html5",
+    "css3",
+    "reactjs"
+  ],
+  "author": "Robert Hunnicutt",
+  "license": "ISC"
+}
