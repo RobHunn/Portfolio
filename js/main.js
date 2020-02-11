@@ -1,13 +1,26 @@
-// Ripple effect
+// ****** Ripple effect start ******
 jQuery(document).ready(function(){
    "use strict"
         $('.slider').ripples({
             dropRadius: 12,
             perturbance: .005,
         });
-});
 
-// Typed Text animation
+        $(window).scroll(function(){
+          var top = $(window).scrollTop();
+           if(top>=380){
+               $("nav").addClass('secondary');
+           }
+           else
+               if($("nav").hasClass('secondary')){
+                  $("nav").removeClass('secondary');
+               }
+           
+      });
+});
+// ****** Ripple effect end ******
+
+// ****** Typed Text animation start ******
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
       this.txtElement = txtElement;
@@ -35,7 +48,7 @@ class TypeWriter {
       // Insert txt into element
       this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
       // Initial Type Speed
-      let typeSpeed = 300;
+      let typeSpeed = 200;
       if(this.isDeleting) {
         typeSpeed /= 2;
       }
@@ -57,7 +70,6 @@ class TypeWriter {
     }
   }
   
-  
   // Init On DOM Load
   document.addEventListener('DOMContentLoaded', init);
   
@@ -69,3 +81,4 @@ class TypeWriter {
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
   }
+  // ****** Typed Text animation end ******
