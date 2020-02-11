@@ -19,6 +19,15 @@
     background-color: transparent !important;
 }
 
+.navbar-branding{
+    color:red !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align:center;
+}
+
 /* 
 * --Nav Menu items--
 */
@@ -92,10 +101,30 @@
 /* 
 * --Top 3 icons--
 */
-.icons .fa{
+.icons .fab{
     font-size: 60px;
     margin-right: 7px;
 }
+.icons .fas{
+    font-size: 60px;
+    margin-right: 7px;
+}
+
+/* 
+* --Typed Text--
+*/
+
+.h3-txt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.txt-type{
+    color: red;
+}
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+
 /* 
 * --Slider buttons--
 */
@@ -143,7 +172,7 @@
 /* 
 * --Social media icons--
 */
-.social-media a.fa{
+.social-media a.fab{
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px;
@@ -154,7 +183,7 @@
     margin-right: 2px;
     transition: all .5s ease-in;
 }
-.social-media a.fa:hover{
+.social-media a.fab:hover{
     text-decoration: none;
     border: 1px solid red;
     color:white;
