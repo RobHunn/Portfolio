@@ -1,24 +1,25 @@
-// ****** Ripple effect start ******
+// ****** jQuery start ******
+//ripple effect
 jQuery(document).ready(function(){
    "use strict"
         $('.slider').ripples({
             dropRadius: 12,
             perturbance: .005,
         });
-
+//sticky nav
         $(window).scroll(function(){
           var top = $(window).scrollTop();
-           if(top>=380){
+           if(top>=280){
                $("nav").addClass('secondary');
            }
            else
                if($("nav").hasClass('secondary')){
                   $("nav").removeClass('secondary');
-               }
-           
+               }  
       });
 });
-// ****** Ripple effect end ******
+// ****** jQuery end ******
+
 
 // ****** Typed Text animation start ******
 class TypeWriter {
