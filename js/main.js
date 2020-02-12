@@ -17,6 +17,34 @@ jQuery(document).ready(function(){
                   $("nav").removeClass('secondary');
                }  
       });
+
+      
+
+      $('#youtube-wrapper').owlCarousel({
+          items:3,
+          autoplay:true,
+          loop:true,
+          smartSpeed:700,
+          autoplayHoverPause:true,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              768:{
+                  items:2,
+                  nav:false
+              },
+              900:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }
+      })
+
+
 });
 // ****** jQuery end ******
 
