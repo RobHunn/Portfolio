@@ -24,22 +24,24 @@ jQuery(document).ready(function(){
           items:3,
           autoplay:true,
           loop:true,
-          smartSpeed:900,
+          smartSpeed:700,
           autoplayHoverPause:true,
           responsiveClass:true,
           responsive:{
               0:{
                   items:1,
-                  nav:true
+                  nav:true,
+                  loop:true
               },
-              768:{
+              820:{
                   items:2,
-                  nav:false
+                  nav:true,
+                  loop:true
               },
-              900:{
+              1000:{
                   items:3,
                   nav:true,
-                  loop:false
+                  loop:true
               }
           }
       })

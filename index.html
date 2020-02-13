@@ -39,10 +39,10 @@
             <!--Nav toggle menu start-->
             <div class="collapse navbar-collapse" id="nav-hamburger-btn">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Home</a></li>
+                    <li><a href="#home-target">Home</a></li>
                     <li><a href="">About Me</a></li>
-                    <li><a href="#">My YouTube</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#youtube-target">My YouTube</a></li>
+                    <li><a href="#portfolio-target">Portfolio</a></li>
                     <li><a href="">Blog</a></li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
     </nav>
     <!--Navigation end-->
     <!--Slider section start-->
-    <section class="slider text-center" id="slider">
+    <section class="slider text-center" id="home-target">
         <div class="slider-opacity">
             <div class="slider-content">
                 <div class="icons">
@@ -72,7 +72,7 @@
                 <br>
                 <div class="text">
                     <div class="cta-div">
-                        <a href="" class="btn1">CONTACT ME</a>
+                        <a href="#contact-target" class="btn1">CONTACT ME</a>
                         <a href="" class="btn2">LEARN TODAY</a>
                     </div>
                     <br><br>
@@ -89,7 +89,7 @@
 
     <!--About me section end-->
     <!-- Youtube section start-->
-    <section class="youtube">
+    <section class="youtube" id="youtube-target">
         <div class="container text-center youtube-h2">
             <h2><b>YouTube Channel</b></h2>
             <p>Check out my tech channel</p>
@@ -147,7 +147,7 @@
     </section>
     <!--Youtube section end-->
     <!--Portfolio section start-->
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section" id="portfolio-target">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -255,6 +255,44 @@
         </div>
     </section>
     <!--Portfolio section end-->
+    <!--Contact Me form Start-->
+    <section class="contact-area" id="contact-target">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <div class="section-heading">
+                        <h2 class="section-title"><b>Leave Me A Message</b></h2>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form action="" id="contact-form" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" id="name" name="name"  class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" id="email" name="email"  class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-12"><br>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-md-12 "><br>
+                                <textarea rows="4" id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-md-12 text-center"><br>
+                                <button class="btn btn-success" type="submit">Submit Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Me form end-->
 </body>
 <!--Owl js-->
 <script src="/js/owl.carousel.min.js"></script>

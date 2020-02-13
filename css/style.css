@@ -3,9 +3,7 @@
     margin: 0%;
     padding: 0%;
 }
-body{
-    background-color:rgb(251, 251, 251);
-}
+
 /************************************************************************/
                     /*
                     * === Nav styles start ===
@@ -217,17 +215,17 @@ body{
     padding-bottom: 25px;
     background-image: url('/images/youtube.jpg');
     width: 100%;
-    
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .youtube-item iframe{
     box-shadow: 10px 5px 5px rgb(107, 107, 107);
     border: 1px solid black;
     position: center;
-    width: 300px;
-    height: 215px;
+    width: 350px;
+    height: 350px;
     padding: 15px;
     margin-top: 20px;
 }
@@ -238,11 +236,14 @@ body{
                     */
 /************************************************************************/
 .portfolio-section{ 
+    
     background-image: url('/images/marble.jpg');
     width: 100%;
-    height: 100vh;
     background-size: cover;
     background-position: bottom;
+}
+.section-title{
+    margin-top: 50px;
 }
 .post{
     width: 350px;
@@ -289,10 +290,18 @@ body{
       text-decoration: none;
   }
 
-  
-
   /************************************************************************/
                     /*
                     * === Contact me section start ===
                     */
 /************************************************************************/
+.contact-area{
+    margin-top: 60px;
+}
+.border-bottom{
+    width: 40px;
+    height: 2px;
+    background: red;
+    box-shadow: 2px 2px 5px black;
+    margin: 0 auto;
+}
