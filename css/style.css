@@ -2,6 +2,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    
 }
 
 /************************************************************************/
@@ -42,8 +43,10 @@
     letter-spacing: 1px;
     font-size: 13px;
     transition: all .5s ease-in;
+    background: transparent !important;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover, .navbar ul li a:focus{
     color: red !important;
     background: none !important;
 }
@@ -243,7 +246,7 @@
     background-position: bottom;
 }
 .section-title{
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .post{
     width: 350px;
