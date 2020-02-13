@@ -19,12 +19,12 @@ jQuery(document).ready(function(){
       });
 
       
-
+//youtube carousel
       $('#youtube-wrapper').owlCarousel({
           items:3,
           autoplay:true,
           loop:true,
-          smartSpeed:700,
+          smartSpeed:900,
           autoplayHoverPause:true,
           responsiveClass:true,
           responsive:{

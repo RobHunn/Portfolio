@@ -3,6 +3,9 @@
     margin: 0%;
     padding: 0%;
 }
+body{
+    background-color:rgb(251, 251, 251);
+}
 /************************************************************************/
                     /*
                     * === Nav styles start ===
@@ -241,7 +244,7 @@
     position: relative;
     cursor: pointer;
     margin-top: 20px;
-
+    box-shadow: 10px 5px 5px rgb(107, 107, 107);
   }
   .post:hover .post-s{
     width: 350px;
@@ -257,18 +260,30 @@
     background: rgba(103, 58, 183, 0.71);
     position: absolute;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     transition: 0.7s ease;
   }
   .post-s h2{
     color: white;
-    font-size: 50px;
-    border: 6px solid white;
-    padding: 10px 30px;
+    font-size: 2.5rem;
+    text-align: center;
   }
+  .post-s a {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  .post-s p{
+      color: white;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+  }
+
+  
 
   /************************************************************************/
                     /*
