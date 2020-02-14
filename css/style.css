@@ -326,10 +326,6 @@ z-index:1;
     }
   }
 
-
-
-
-
 /************************************************************************/                  
                     /*
                     * === Youtube section start ===
@@ -339,7 +335,7 @@ z-index:1;
 .youtube{
     padding-top: 25px;
     padding-bottom: 25px;
-    background-image: url('/images/youtube.jpg');
+  
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -357,6 +353,9 @@ z-index:1;
 }
 .youtube .youtube-h1{
     font-family: var(--h1-font-family);
+}
+.youtube .youtube-h1 img{
+    width: 150px;
 }
 .youtube .youtube-h1 p{
     font-family: var( --p-font-family);

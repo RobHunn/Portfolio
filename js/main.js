@@ -114,3 +114,22 @@ class TypeWriter {
     new TypeWriter(txtElement, words, wait);
   }
   // ****** Typed Text animation end ******
+
+// Ester Egg
+const myAudioElement = element = document.getElementById("navbar-brand-mp3");
+const audioObj = new Audio('images/body-bag.mp3');
+const audioObj1 = new Audio('images/No-Sensei.mp3');
+const audioObj2 = new Audio('images/luck.mp3');
+var audioObjAll = [];
+var count = 0;
+audioObjAll.push(audioObj2,audioObj1,audioObj);
+
+  myAudioElement.addEventListener("click", event => {
+    if(count <= 2){
+        audioObjAll[count].play();
+        count ++
+    }else{
+      count = 0;
+      audioObjAll[count].play();
+    }
+});
