@@ -6,6 +6,9 @@
     margin: 0%;
     padding: 0%;  
 }
+body{
+    background-color: rgb(245, 245, 245);
+}
 
 /* Global Vars*/
 :root {
@@ -237,6 +240,7 @@
 #about-me{
 padding: 80px 0;
 z-index:1;
+background-color: rgb(245, 245, 245);
 }
 #about-me .my-info{
     margin-top: 19rem;
@@ -261,7 +265,25 @@ z-index:1;
     position: relative;
     z-index:1;
 }
-#about-me .my-info a{
+#about-me .my-info p.p2{
+    font-family: var(--p-font-family);
+    font-size: 1.7rem;
+    text-transform: lowercase;
+    margin-bottom: 4rem;
+    color: black;
+    position: relative;
+    z-index:1;
+}
+#about-me .my-info p.p2 span{
+    font-family: var(--p-font-family);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    color: black;
+    position: relative;
+    z-index:1;
+}
+/*#about-me .my-info a{
     font-family: var(--p-font-family);
     font-size: 1.2rem;
     text-decoration: none;
@@ -273,7 +295,7 @@ z-index:1;
     position: relative;
     z-index:1;
     letter-spacing: 2px;
-}
+}*/
 #about-me .img-trey .background-img{
     background-image: url('/images/IMG_0222.jpeg');
     width: 100%;
@@ -287,11 +309,11 @@ z-index:1;
 #about-me .my-info .blue-sqr{
     position: absolute;
     z-index:0;
-    border:20px solid #dbf1ff;
-    width: 400px;
-    height: 400px;
+    border:20px solid rgb(243, 116, 116);
+    width: 500px;
+    height: 500px;
     top:-120px;
-    left: -50px;
+    left: -190px;
 }
 
 
@@ -414,9 +436,10 @@ z-index:1;
 /************************************************************************/
 .contact-area{
     margin-top: 60px;
+    background-color: rgb(245, 245, 245);
 }
 .border-bottom{
-    width: 40px;
+    width: 80px;
     height: 2px;
     background: red;
     box-shadow: 2px 2px 5px black;
