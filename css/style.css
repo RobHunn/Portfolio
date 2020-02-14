@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500&display=swap');
+
 /* All styles*/
 *{
     margin: 0%;
-    padding: 0%;
-    
+    padding: 0%;  
 }
+
+/* Global Vars*/
+:root {
+    --h1-font-family: 'Libre Baskerville', serif;
+    --p-font-family: 'IBM Plex Serif', serif;
+  }
 
 /************************************************************************/
                     /*
@@ -87,6 +95,7 @@
     background-image: url(../images/main/main-slider.jpg);
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 /* 
 * --Adjust here for opacity div--
@@ -107,23 +116,29 @@
     width: 100%;
 }
 /* 
-* --Top 3 icons--
+* --Top icons--
 */
 .icons .fab{
-    font-size: 60px;
+    font-size: 5rem;
     margin-right: 7px;
 }
 .icons .fas{
-    font-size: 60px;
+    font-size: 5rem;
     margin-right: 7px;
 }
-
+.h1-txt{
+    font-family: var(--h1-font-family);
+    font-size: 3.5rem;
+   
+}
 /* 
 * --Typed Text--
 */
 
 .h3-txt{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: var(--p-font-family);
+    font-size: 2rem;
+ 
 }
 .txt-type{
     color: red;
@@ -148,6 +163,8 @@
     border: 2px solid white;
     border-top-left-radius: 15px;
     transition: all .5s ease-in;
+    font-family: var(--p-font-family);
+    text-decoration: none !important;
 }
 .btn1:hover{
     text-decoration: none;
@@ -155,8 +172,16 @@
     background-color: red;
     border-color: red;
 }
+.btn1:hover, .btn1:focus{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
 .btn2{
     padding: 10px 25px;
+    text-decoration: none !important;
     background-color: transparent;
     color: white;
     text-transform: uppercase;
@@ -166,8 +191,15 @@
     border: 2px solid white;
     border-bottom-right-radius: 15px;
     transition: all .5s ease-in;
+    font-family: var(--p-font-family);
 }
 .btn2:hover{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+.btn2:hover, .btn2:focus{
     text-decoration: none;
     color: white;
     background-color: red;
@@ -202,6 +234,75 @@
                     * === About me section start ===
                     */
 /************************************************************************/
+#about-me{
+padding: 80px 0;
+z-index:1;
+}
+#about-me .my-info{
+    margin-top: 19rem;
+    position: relative;
+    z-index:1;
+}
+#about-me .my-info h1{
+font-size: 3rem;
+text-transform: uppercase;
+font-weight: 600;
+font-family: var(--h1-font-family);
+margin-bottom: 2rem;
+position: relative;
+z-index:1;
+}
+#about-me .my-info p{
+    font-family: var(--p-font-family);
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, .30);
+    position: relative;
+    z-index:1;
+}
+#about-me .my-info a{
+    font-family: var(--p-font-family);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 2px solid red !important;
+    font-weight: 700;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    color: #16171b;
+    position: relative;
+    z-index:1;
+    letter-spacing: 2px;
+}
+#about-me .img-trey .background-img{
+    background-image: url('/images/IMG_0222.jpeg');
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index:1;
+}
+#about-me .my-info .blue-sqr{
+    position: absolute;
+    z-index:0;
+    border:20px solid #dbf1ff;
+    width: 400px;
+    height: 400px;
+    top:-120px;
+    left: -50px;
+}
+
+
+@media screen and (max-width: 992px) {
+    #about-me .my-info .blue-sqr{
+        display: none;
+    }
+    #about-me{
+        padding:0px;
+    }
+  }
 
 
 
@@ -232,6 +333,13 @@
     padding: 15px;
     margin-top: 20px;
 }
+.youtube .youtube-h1{
+    font-family: var(--h1-font-family);
+}
+.youtube .youtube-h1 p{
+    font-family: var( --p-font-family);
+    font-size: 2rem;
+}
 
 /************************************************************************/
                     /*
@@ -239,7 +347,6 @@
                     */
 /************************************************************************/
 .portfolio-section{ 
-    
     background-image: url('/images/marble.jpg');
     width: 100%;
     background-size: cover;
@@ -247,6 +354,13 @@
 }
 .section-title{
     margin-top: 25px;
+}
+.section-title h1{
+    font-family: var(--h1-font-family);
+}
+.section-title p {
+    font-family: var( --p-font-family);
+    font-size: 2rem;
 }
 .post{
     width: 350px;
@@ -307,4 +421,8 @@
     background: red;
     box-shadow: 2px 2px 5px black;
     margin: 0 auto;
+}
+.section-heading h1.section-title{
+    font-family: var(--h1-font-family);
+    font-size: 3rem;
 }

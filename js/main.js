@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
           }
       })
 
-$('a').smoothScroll();
+$('a.btn-74').smoothScroll();
 
 });
 // ****** jQuery end ******
