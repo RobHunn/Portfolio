@@ -33,8 +33,6 @@ body{
     border-bottom: none !important;
     
 }
-
-
 .navbar-branding{
     color:red !important;
     text-transform: uppercase;
@@ -106,7 +104,7 @@ body{
 .slider-opacity{
     height: 100%;
     width: 100%;
-    background:rgba(0, 0, 0, .30);
+    background:rgba(0, 0, 0, .35);
     position: relative;
     color: white;
 }
@@ -309,11 +307,12 @@ z-index:1;
 #about-me .my-info .blue-sqr{
     position: absolute;
     z-index:0;
-    border:20px solid rgb(243, 116, 116);
+    border:40px solid rgb(186, 245, 186);
     width: 500px;
     height: 500px;
-    top:-120px;
-    left: -190px;
+    top:-100px;
+    left: -240px;
+    border-radius: 27%;
 }
 
 
@@ -355,7 +354,8 @@ z-index:1;
     font-family: var(--h1-font-family);
 }
 .youtube .youtube-h1 img{
-    width: 150px;
+    width: 190px;
+    margin-top: 25px;
 }
 .youtube .youtube-h1 p{
     font-family: var( --p-font-family);
@@ -428,7 +428,17 @@ z-index:1;
       text-decoration: none;
   }
 
-  /************************************************************************/
+/************************************************************************/
+                    /*
+                    * === Blog me section start ===
+                    */
+/************************************************************************/
+.media-img-1 img{
+width: 121px;
+height: 130px;
+}
+
+/************************************************************************/
                     /*
                     * === Contact me section start ===
                     */

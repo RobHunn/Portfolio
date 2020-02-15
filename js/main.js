@@ -116,20 +116,31 @@ class TypeWriter {
   // ****** Typed Text animation end ******
 
 // Ester Egg
-const myAudioElement = element = document.getElementById("navbar-brand-mp3");
-const audioObj = new Audio('images/body-bag.mp3');
-const audioObj1 = new Audio('images/No-Sensei.mp3');
-const audioObj2 = new Audio('images/luck.mp3');
-var audioObjAll = [];
-var count = 0;
-audioObjAll.push(audioObj2,audioObj1,audioObj);
+const esterEgg = ( ()=>{
+  const myAudioElement = document.getElementById("navbar-brand-mp3");
+  const audioObj = new Audio('images/body-bag.mp3');
+  const audioObj1 = new Audio('images/No-Sensei.mp3');
+  const audioObj2 = new Audio('images/luck.mp3');
+  let audioObjAll = [];
+  let count = 0;
+  audioObjAll.push(audioObj2,audioObj1,audioObj);
 
-  myAudioElement.addEventListener("click", event => {
-    if(count <= 2){
-        audioObjAll[count].play();
-        count ++
+  return{
+    myAudioElement :myAudioElement,
+    audioObj:audioObj,
+    audioObj1:audioObj1,
+    audioObj2:audioObj2,
+    audioObjAll:audioObjAll,
+    count:count
+  }
+})()
+
+  esterEgg.myAudioElement.addEventListener("click", event => {
+    if(esterEgg.count <= 2){
+        esterEgg.audioObjAll[esterEgg.count].play();
+        esterEgg.count ++
     }else{
-      count = 0;
-      audioObjAll[count].play();
+      esterEgg.count = 0;
+      esterEgg.audioObjAll[esterEgg.count].play();
     }
 });
