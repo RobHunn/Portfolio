@@ -2,8 +2,12 @@ const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
-const middleware = require('./controller/error.js');
+const dotenv = require('dotenv');
+const result = dotenv.config();
 const app = express();
+
+//Controllers
+const middleware = require('./controller/error.js');
 
 const port = process.env.PORT ||  1337;
 

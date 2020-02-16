@@ -9,7 +9,9 @@ jQuery(document).ready(function(){
 //sticky nav
         $(window).scroll(function(){
           var top = $(window).scrollTop();
-           if(top>=280){
+          var width = $( window ).width();
+  
+           if(top >= 280 || width < 820){
                $("nav").addClass('secondary');
            }
            else
